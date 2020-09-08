@@ -1,0 +1,6 @@
+hi 
+bye 
+good morning
+good night
+missions	
+basic
