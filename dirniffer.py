@@ -20,6 +20,7 @@ import requests
 print('')
 
 print("[!] NOTE: While entering do not add '/' to the end of a url")
+print("[!] May take a while!")
 print('')
 
 default = "wordlist.txt"
