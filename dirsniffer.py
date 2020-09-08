@@ -22,7 +22,7 @@ print('')
 print("[!] NOTE: While entering do not add '/' to the end of a url")
 print('')
 
-default = "wordlist.txt"
+default = "wordlists/wordlist.txt"
 
 url = input("[*] Enter url to scan: ")
 print('')
@@ -64,7 +64,7 @@ else:
 
 	print("Directories Found:")
 	print('')
-	
+
 	for word in wordlist:
 		if requests.get(url + "/" + word.rstrip()).status_code == 200:
 			print(f"	[+] Directory: {word}")
