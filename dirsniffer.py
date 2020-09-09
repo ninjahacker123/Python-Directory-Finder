@@ -41,10 +41,13 @@ if change.lower() == "y":
 	print('')
 
 	for word in wordlist:
-		if requests.get(url + "/" + word.rstrip()).status_code == 200:
-			print(f"	[+] Directory: {word}")
+		if requests.get(url + "/" + word.rstrip()).status_code == 200 or requests.get(url + "/" + word.rstrip()).status_code == 301:
+			print(f"	[+] Status Code: {requests.get(url + '/' + word.rstrip()).status_code} / Directory: {word}")
+			print('')
 		elif 1 + 1 == 2: # Elif statement written to fix else statement issue I was facing
 			a = 2
+		elif requests.get(url + "/" + word.rstrip()).status_code >= 500:
+			print("[-] Server is down!")
 		else:
 			break
 
@@ -66,8 +69,8 @@ else:
 	print('')
 
 	for word in wordlist:
-		if requests.get(url + "/" + word.rstrip()).status_code == 200:
-			print(f"	[+] Directory: {word}")
+		if requests.get(url + "/" + word.rstrip()).status_code == 200 or requests.get(url + "/" + word.rstrip()).status_code == 301:
+			print(f"	[+] Status Code: {requests.get(url + '/' + word.rstrip()).status_code} / Directory: {word}")
 		elif 1 + 1 == 2: # Elif statement written to fix else statement issue I was facing
 			a = 2
 		else:
