@@ -7,10 +7,6 @@
 	if they return a status code of 200 if a GET request has been send. A deafault wordlist has been provided 
 	in the directory.
 
-	DISCLAIMER: DO NOT USE FOR ILLEAGAL PURPOUSES, I WILL NOT BE RESPONSIBLE!
-
-	Hope you Enjoy!
-
 	- Joseph Marc Antony
 
 """
